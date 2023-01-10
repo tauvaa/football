@@ -1,0 +1,12 @@
+.team {
+    background: black;
+    color:white;
+    cursor:pointer;
+    padding: 4px;
+    width: 20%;
+    margin: auto;
+}
+
+.select {
+    cursor: pointer;
+}
