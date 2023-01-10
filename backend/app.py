@@ -17,13 +17,13 @@ def hello_world():
 @app.route("/teams", methods=["GET"])
 def get_teams():
     teams = sql.get_teams()
+    teams.sort()
     return {"teams": teams}
 
 
 @app.route("/teamstats", methods=["GET"])
 def get_team_stats():
     team = request.args.get("team")
-    print(team)
     stats = sql.get_team_stats(team)
     return stats
 
