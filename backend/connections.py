@@ -11,7 +11,6 @@ class Connector:
         self.connection: psy.extensions.connection
 
     def __exit__(self, exc_type, exc_value, traceback):
-        print("exiting")
         self.connection.close()
 
     def __enter__(self):
