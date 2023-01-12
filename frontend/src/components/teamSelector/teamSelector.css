@@ -6,6 +6,9 @@
     width: 20%;
     margin: auto;
 }
+.team:hover {
+    background-color:green;
+}
 
 .select {
     cursor: pointer;
